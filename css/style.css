@@ -65,3 +65,93 @@
     color: #E5E5E5 !important;
     font-size: 2rem;
 }
+
+
+/*contact*/
+h2,h4{
+    margin-bottom: 2rem;
+}
+.para{
+    margin-bottom: 1rem;
+}
+.contact__form{
+    margin-top: 2rem;
+}
+.contact__field{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    position: relative;
+    column-gap: 1rem;
+}
+
+.inputGroup{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inputGroup label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.2rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  display: block;
+  width: 100%; 
+  padding: 1.4rem 1.2rem; 
+}
+
+.inputGroup textarea{
+    min-height: 8rem;
+    padding: 2rem 1.2rem 0 1.2rem;
+}
+
+.inputGroup--text label{
+    top: 25%;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label
+{
+  top: 25%;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.inputGroup textarea:focus ~ label,
+.inputGroup textarea:valid ~ label {
+  top: 15%;
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+
+
+
+
+
+.form__contact--phone{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.form__contact--text{
+   
+    min-height: 10rem;
+   
+  
+}
+.btn--primary{
+    padding: 1.2rem 3rem;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
